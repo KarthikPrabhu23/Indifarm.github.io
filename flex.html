@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px black;
+        }
+
+        .flex-container div {
+            transition: transform .6s;
+            border-radius: 12px;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 312px;
+            height: auto;
+            margin: 10px;
+            text-align: center;
+
+        }
+
+
+        div:hover {
+            border: 4px solid rgb(78, 86, 197, 0.76);
+            transition-delay: 0.1s;
+            transform: scale(1.1);
+            background: rgba(150, 160, 216, 0.204);
+
+        }
+
+        div img {
+            width: 150px;
+            height: 150px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div2 class="flex-container">
+        <div class="new" onclick="location.href='plant.html'">
+            <img src="pic\crop-removebg.png">
+            <h2>Plantation Information</a></h2>
+            <p class="center">Access to get detailed information</p>
+        </div>
+
+        <div class="new" onclick="location.href='plant.html'">
+            <img src="pic\crop-removebg.png">
+            <h2>Plantation Information</a></h2>
+            <p class="center">Access to get detailed information</p>
+        </div>
+
+        <div class="new" onclick="location.href='weather.html'">
+            <img src="pic\weather2.png">
+            <h2>Weather forecast</h2>
+            <p>
+                Interactive weather maps favouring better farming</p>
+        </div>
+
+        <div class="new" onclick="location.href='Irrigation.html'">
+            <img src="pic\irrigation2.png" alt="">
+            <h2>Irrigation techniques</h2>
+            <p>Supply of water to land <br>or crops to help growth.</p>
+        </div>
+
+        <div class="box" onclick="location.href='fin.html'">
+            <img src="pic\shop22.png" alt="">
+            <h2>Financial support</a></h2>
+            <p>One-stop page for purchasing all your farm requirements.</p>
+        </div>
+
+        <div class="box" onclick="location.href='fin.html'">
+            <img src="pic\soil2.png" alt="">
+            <h2>Soil test centres</a></h2>
+            <p>One-stop page for purchasing all your farm requirements.</p>
+        </div>
+    </div2>
+
+</body>
+
+</html>

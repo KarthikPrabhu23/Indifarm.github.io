@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IndiFarm | Farmer's first choice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+
+    <!-- SLIDESHOW CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            z-index: -2;
+            top: 5px;
+            /* box-shadow: 18px 18px 18px 18px rgba(51, 48, 48, 0.267); */
+        }
+
+        .slideshow-container img {
+            width: 1200px;
+            height: 400px;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 10px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.8s ease;
+        }
+
+        .mySlides:hover {
+            box-shadow: 18px 18px 18px 18px rgba(51, 48, 48, 0.267);
+        }
+
+        .active {
+            background-color: #5f5d5d;
+        }
+
+
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 0.5s;
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .1
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .1
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
+    <!-- SERVICES CSS -->
+    <style>
+        hr.new1 {
+            margin-top: 25px;
+            margin-bottom: 16px;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px black;
+            padding-left: 77px;
+            padding-right: 77px;
+            z-index: -2;
+            padding-bottom: 40px;
+            /* background-color: rgba(191, 204, 149, 0.431); */
+            /* background-color: #EDC7B7; */
+            background-image: linear-gradient(rgba(176, 186, 243, 0.671), rgb(255, 255, 255));
+        }
+
+        .flex-container div {
+            transition: transform .6s;
+            border-radius: 12px;
+
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 360px;
+            /* height: auto; */
+            /* height: 250px; */
+            min-height: 270px;
+            margin: 15px;
+            text-align: center;
+            padding: 8px;
+            border: 5px black;
+
+        }
+
+        #new {
+            /* border: 2px black; */
+            border: 2px solid rgba(13, 6, 37, 0.76);
+        }
+
+        #new:hover {
+            border: 4px solid rgba(112, 88, 190, 0.76);
+            transition-delay: 0.1s;
+            transform: scale(1.1);
+            background: rgb(231, 233, 246);
+        }
+
+        #bg {
+            background-color: aqua;
+        }
+
+        #center {
+            text-align: center;
+        }
+
+        div img {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR  -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pic\IndiFarm.jpeg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#start">Home</a></li>
+            <li class="item"><a href="#services-box">Features</a></li>
+            <li class="item"><a href="#con">Contact Us</a></li>
+        </ul>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    </nav>
+
+    <section id="start"></section>
+
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="pic/back.jpg" style="width:100%">
+            <div class="text">IndiFarm</div>
+           
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+           
+            <img src="pic/sunset.jpeg" style="width:100%">
+            <div class="text">Sunset</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="pic/contact.jpg" style="width:100%">
+            <div class="text">CONTACT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="pic/farm1.jpg" style="width:100%">
+            <div class="text">Farm</div>
+
+        </div>
+
+    </div>
+    <section id="services-box"></section>
+    <br>
+
+
+    <!-- DOTS SLIDESHOW -->
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+    <!-- SERVICES BOX OLD -->
+    <!-- <section id="services-box">
+
+        <h1 class="h-primary center">Features</h1>
+        <div id="services">
+            <div class="box">
+                <img src="pic\crop-removebg.png" alt="" background-image:none;>
+                <h2 class="h-secondary center"><a href="plant.html">Plantation Information</a></h2>
+                <p class="center">Access to detailed information</p>
+            </div>
+            
+            <div class="box">
+                <img src="pic\weather2.png" alt="" background-image:none;>
+                <h2 class="h-secondary center"><a href="weather.html">Weather forecast</a></h2>
+                <p class="center">Interactive weather maps <br>favouring better farming .</p>
+            </div>
+
+            <div class="box">
+                <img src="pic\irrigation2.png" alt="">
+                <h2 class="h-secondary center"><a href="irri.html">Irrigation techniques</a></h2>
+                <p class="center">Supply of water to land <br>or crops to help growth.</p>
+            </div>
+
+ 
+            <div class="box">
+                <img src="pic\shop21.png" alt="">
+                <h2 class="h-secondary center"><a href="fin.html">Financial support</a></h2>
+                <p class="center">One-stop page for purchasing all your<br>farm requirements.</p>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- SERVICES FLEX -->
+    <hr class="new1">
+    <h1 id="center" style="font-size: 50px;">Features </h1>
+
+    <div class="flex-container">
+
+        <div id="new" onclick="location.href='plant.html'">
+            <img src="pic\crop-removebg.png">
+            <h2>Plantation Information</a></h2>
+            <p class="center">Access to get detailed information</p>
+        </div>
+
+        <div id="new" onclick="location.href='plant.html'">
+            <img src="pic\crop-removebg.png">
+            <h2>Plantation Information</a></h2>
+            <p class="center">Access to get detailed information</p>
+        </div>
+
+        <div id="new" onclick="location.href='weather.html'">
+            <img src="pic\weather2.png">
+            <h2>Weather forecast</h2>
+            <p>
+                Interactive weather maps favouring better farming</p>
+        </div>
+
+        <div id="new" onclick="location.href='Irrigation.html'">
+            <img src="pic\irrigation2.png" alt="">
+            <h2>Irrigation techniques</h2>
+            <p>Supply of water to land <br>or crops to help growth.</p>
+        </div>
+
+        <div id="new" onclick="location.href='fin.html'">
+            <img src="pic\shop22.png" alt="">
+            <h2>Financial support</a></h2>
+            <p>One-stop page for purchasing all your farm requirements.</p>
+        </div>
+
+        <div id="new" onclick="location.href='fin.html'">
+            <img src="pic\soil2.png" alt="">
+            <h2>Soil test centres</a></h2>
+            <p>One-stop page for purchasing all your farm requirements.</p>
+        </div>
+    </div>
+    <section id="con"></section>
+    <!-- CONTACT US -->
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <form method="get" action="/fin.html">
+                    <button type="financial support"> SUBMIT MY PROPOSAL </button>
+                </form>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="center">
+            "If the farmer is rich, then so is the nation"
+        </div>
+    </footer>
+
+
+    <div id="bg"> </div>
+
+</body>
+
+<!-- JS FOR SLIDESHOW  -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3100); // Change image every 2 seconds
+    }
+</script>
+
+</html>

@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  }
+  .header
+  {
+    height: 100vh;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    
+  }
+  /* .navbar-style
+  {
+    box-shadow: 0 0px 0px #efefef;
+      text-transform: uppercase;
+  } */
+  .logo
+  {
+    height: 100px;
+    padding: 0px 0px;
+  }
+  footer{
+    background: black;
+    color: white;
+    padding: 0px 0px;
+    height: 34px;
+}
+
+.icon-bar
+{
+    background: darkorange;
+}
+
+li a
+{
+     color: #efefef
+}
+
+.big text
+{
+    font-size: 40px;
+    margin:20px 0;
+    color: white;
+}
+a.btn
+{
+    margin: 40px 20px;
+    width: 220px;
+    padding:20px;
+    color: white;
+    border-radius:30px;
+    }
+a.btn-first
+{
+    background: rgb(150, 138, 124);
+    border: 2px solid white;
+    color: greenyellow;
+}
+
+/* Features Section */
+#Features{
+
+
+  margin: 3px;
+  display: 100px;
+  height: 79px;
+  width: 10px;
+  padding: 9px;
+  margin-bottom: 10px;
+}
+
+/* #services {margin: 1024px;} */
+
+
+ #services .box{ 
+  border: 5px solid brown;
+  padding: 10px;
+  margin: 20px ;
+  height: 159px;
+  width: auto; 
+  border-radius: 30px;
+  background: #DEE4E7;
+  margin-bottom: 20px;
+}
+/* TRIAL ---------------------*/
+#Features .box p{
+  font-family: 'Bree Serif', serif;
+} 
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index: -2;
+  opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */ 
+#logo{
+  margin: 0px 34px;
+}
+
+#logo img{
+  height: 41px;
+  margin: 7px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 2.3rem;
+}
+
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
